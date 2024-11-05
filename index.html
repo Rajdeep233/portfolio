@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Student Portfolio</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Header */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1.5em 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Sticky Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            color: white;
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 1em;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ddd;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 2em 0;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 1em;
+            font-size: 2em;
+            color: #333;
+        }
+
+        /* About Section */
+        #about .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+
+        #about .about-content img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 1em;
+        }
+
+        #about .about-content p {
+            max-width: 600px;
+            line-height: 1.6;
+            margin: 1em;
+        }
+
+        /* Projects Section */
+        #projects {
+            background: #f4f4f4;
+        }
+
+        .project {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.5em;
+            flex-wrap: wrap;
+        }
+
+        .project img {
+            width: 200px;
+            height: 120px;
+            margin-right: 1.5em;
+            border-radius: 5px;
+        }
+
+        .project div {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        /* Skills Section */
+        .skills-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .skill {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 1em;
+        }
+
+        .skill-name {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .progress-bar {
+            background-color: #ddd;
+            width: 100%;
+            height: 1rem;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-top: 0.5em;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #333;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+
+        #contact h2 {
+            margin-bottom: 1em;
+        }
+
+        #contact a {
+            color: #328be4;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #contact a:hover {
+            color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background: #444;
+            color: rgb(249, 245, 245);
+            padding: 1em;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            nav a {
+                padding: 0 0.5em;
+                font-size: 1em;
+            }
+
+            .project {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .project img {
+                margin-bottom: 1em;
+            }
+
+            .skills-list {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Rajdeep Pradhan</h1>
+            <h4 style="margin-left: 200px ;">-Web Developer</h4>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="download (2).jpg" alt="Your Photo">
+                <p>Hi, I'm Rajdeep Pradhan, an engineering student with a passion for solving real-world problems using technology. My main interests lie in software development, electronics, and mechanical design. I am constantly looking for ways to improve and expand my skills to make an impact.</p>
+            </div>
+        </div>
+    </section>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Section</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f8f9fc;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 2em 0;
+        }
+
+        /* Education Section */
+        #education {
+            padding: 4em 0;
+            text-align: center;
+        }
+
+        #education h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 1.5em;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1.5em;
+            position: relative;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 5%;
+            width: 90%;
+            height: 2px;
+            background-color: #ddd;
+            z-index: -1;
+        }
+
+        .timeline-item {
+            text-align: left;
+            max-width: 300px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            background-color: #7a32f2;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: -15px;
+            transform: translateY(-50%);
+        }
+
+        .timeline-date {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 0.5em;
+        }
+
+        .timeline-title {
+            font-size: 1.2em;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+
+        .timeline-location, .timeline-grade {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 0.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="timeline">
+                <!-- Education Item 1 -->
+                <div class="timeline-item">
+                    <p class="timeline-date">2024 - Present</p>
+                    <p class="timeline-title">Pursuing Bachelor's of Computer Science<br> <strong>Lovely Professional University</strong></p>
+                    <p class="timeline-location">Phagwara, Punjab, India</p>
+                    <p class="timeline-grade">CGPA: -</p>
+                </div>
+                <!-- Education Item 2 -->
+                <div class="timeline-item">
+                    <p class="timeline-date">2022 - 2024</p>
+                    <p class="timeline-title">Intermediate 12th Passout<br> <strong>Asadtala Binode Vidyapith</strong></p>
+                    <p class="timeline-location">Medinipur, West Bengal ,India</p>
+                    <p class="timeline-grade">Percentage: 76.8%</p>
+                </div>
+                <!-- Education Item 3 -->
+                <div class="timeline-item">
+                    <p class="timeline-date">2012 - 2022</p>
+                    <p class="timeline-title">High School 10th Passout<br> <strong>Asadtala Binode Vidyapith</strong></p>
+                    <p class="timeline-location">Medinipur, West Bengal ,India</p>
+                    <p class="timeline-grade">Percentage: 89%</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <a href="http://www.google.com/" target="_blank" rel="noopener noreferrer"><img src="Screenshot 2024-11-05 235838.png" alt="Project 1"></a>
+                <div>
+                    <h3>Project 1</h3>
+                    <p>The Plantopia project not only provided a platform to showcase my technical skills but also deepened my understanding of e-commerce principles and customer engagement strategies. This project has prepared me for future challenges in web development and reinforced my passion for creating user-friendly digital experiences. I used Html, Css and some basic JavaScript to make this project.
+
+                    </p>
+                </div>
+           
+            
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill">
+                    <div class="skill-name">
+                        <span>HTML</span><span>90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skill-name">
+                        <span>CSS</span><span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+               
+                <div class="skill">
+                    <div class="skill-name">
+                        <span>JavaScript</span><span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                           </div>
+                         </div>
+                          <div class="skill">
+                           <div class="skill-name">
+                          <span>Python</span><span>85%</span>
+                          </div>
+                     <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+             </div>
+             </div>
+    </div>
+    </section>
+
+  <!--contacts-->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Contact Me</title>
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        /* Contact Section Styling */
+        #contact {
+            padding: 4em 0;
+            background-color: #f8f9fc;
+            color: #333;
+        }
+
+        #contact h2 {
+            text-align: center;
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 1em;
+        }
+
+        .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Contact Form Styling */
+        .contact-form {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 1em;
+            margin-bottom: 1em;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .contact-form input[type="submit"] {
+            background-color: #36363a;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            padding: 0.75em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background-color: #2a272f;
+        }
+
+        /* Contact Information Styling */
+        .contact-info {
+            flex: 1;
+            min-width: 280px;
+            color: #555;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+            color: #333;
+        }
+
+        .contact-info p {
+            margin-bottom: 1em;
+            font-size: 1em;
+        }
+
+        .contact-info a {
+            color: #7a32f2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-form, .contact-info {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <input type="text" name="name" placeholder="Name*" required>
+                        <input type="email" name="email" placeholder="Email*" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <h3>Rajdeep Pradhan</h3>
+                    <p>Web Developer / Engineering Student</p>
+                    <p><strong>Phone:</strong>904693233</p>
+                    <p><strong>Email:</strong> <a href="mailto:rajdeep@example.com">prajdeep736@gmail.com</a></p>
+                    <p><strong>Website:</strong> <a href="https://www.rajdeeppradhan.com" target="_blank">www.rajdeeppradhan.com</a></p>
+                    <p>
+                        <!-- Optional Social Icons -->
+                        <a href="https://www.facebook.com/profile.php?id=100081230804186&mibextid=ZbWKwL" target="_blank"><img src="download.jpg" alt="Facebook" style="width: 44px; height: 38px;border-radius:50% ;"></a>  |
+                        <a href="https://www.linkedin.com/in/rajdeep-pradhan-993a72320" target="_blank"><img src="download (1).jpg" alt="LinkedIn" style="width: 44px; height: 44px;border-radius:50% ;"></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rajdeep Pradhan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
